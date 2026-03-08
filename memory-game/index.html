@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideQuest Arcade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a href="../index.html" class="back-btn">← MENU</a>
+  <video class="background-video" autoplay loop muted>
+    <source src="../common/game-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="board">
+    <div class="game-area">
+      <div id="grid"></div>
+    </div>
+    <div class="game-data">
+      <h1>Memory Game</h1>
+      <p>Match all the same symbols and reveal all the cards</p>
+      <h3>Errors: <span id="error"></span></h3>
+    </div>
+  </div>
+  <script src="../common/utils.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+:root {
+  --cell-size: 40px;
+  --grid-size: 15;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: transparent; /* Transparent background for the body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#grid {
+  width: calc(var(--cell-size) * var(--grid-size) + 4px);
+  height: calc(var(--cell-size) * var(--grid-size) + 4px);
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black; /* Transparent background for the grid */
+  position: relative; /* So child elements can be positioned absolutely if needed */
+}
+
+#grid > div {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  font-size: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.alien {
+  background-image: url('./images/alien.png');
+}
+
+.spaceship {
+  background-image: url('./images/spaceship.png');
+}
+
+.laser {
+  background-image: url('./images/laser.png');
+}
+
+.boom {
+  background-image: url('./images/boom.png');
+}

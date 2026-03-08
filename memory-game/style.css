@@ -1,0 +1,59 @@
+:root {
+    --card-size: 150px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #282c34; /* Dark background for contrast */
+    display: flex;
+    align-items: flex-start; /* Aligns the grid to the top */
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#grid {
+    margin-top: 20px; /* Move the grid 20px up */
+    height: calc(var(--card-size) * 3); /* 3 rows of cards */
+    width: calc(var(--card-size) * 4); /* 4 columns of cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures cards are centered horizontally */
+    align-items: center; /* Ensures cards are centered vertically */
+    gap: 10px; /* Optional gap between the cards */
+}
+
+.card {
+    width: var(--card-size);
+    height: var(--card-size);
+    background-image: url('./images/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.alien {
+    background-image: url('./images/alien.png');
+}
+
+.bug {
+    background-image: url('./images/bug.png');
+}
+
+.duck {
+    background-image: url('./images/duck.png');
+}
+
+.rocket {
+    background-image: url('./images/rocket.png');
+}
+
+.spaceship {
+    background-image: url('./images/spaceship.png');
+}
+
+.tiktac {
+    background-image: url('./images/tiktac.png');
+}
